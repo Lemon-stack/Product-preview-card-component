@@ -1,0 +1,186 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+:root{
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream:hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White:hsl(0, 0%, 100%);
+  --montserrat:'Montserrat',verdana;
+}
+@media(max-width:768px){
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Cream);
+  }
+  .ctn{
+    margin:1rem 1rem;
+    display:flex;
+    flex-flow:column nowrap;
+    background-color:var(--White);
+    border:none;
+    border-radius:12px;
+  }
+  .hero{
+    padding:1.2rem 1.4rem;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:left;
+    margin-top:-12px;
+  }
+  .hero h1{
+    color:var(--Very-dark-blue);
+    margin-top:-6px;
+    margin-bottom:-5px;
+    font-family:'Fraunces',verdana;
+  }
+  .hero p{
+    font-family:var(--montserrat);
+    font-weight:700;
+    color:var(--Dark-grayish-blue);
+  }
+  .ctn img{
+    width:20.5rem;
+    height:auto;
+    border:none;
+    border-radius:12px 12px 0 0;
+  }
+  .price{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:left;
+    align-items:center;
+    margin-top:8px;
+  }
+  .price h1{
+    font-family:'Fraunces',verdana;
+    color:var(--Dark-cyan);
+    font-weight:700;
+    margin-right:10px
+  }
+  .price span{
+    color:var(--Dark-grayish-blue);
+    text-decoration:line-through;
+    font-weight:500;
+  }
+  .hero button{
+    color:var(--White);
+    font:16px bold var(--montserrat);
+    font-weight:500;
+    background-color:var(--Dark-cyan);
+    width:18rem;
+    border:none;
+    border-radius:10px;
+    padding:1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-top:1.2rem;
+    margin-bottom:0.5rem;
+  }
+  .hero button:hover{
+    background-color:var(--Very-dark-blue);
+  }
+  .hero button svg{
+    margin-right:10px;
+    text-align:center;
+  }
+}
+@media(min-width:769px){
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Cream);
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+  }
+   .ctn{
+    margin:4rem 22rem;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    background-color:var(--White);
+    border:none;
+    border-radius:15px;
+  }
+  .hero{
+    padding:0.5rem 2.2rem;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:left;
+    margin-top:-2.5rem;
+    width:18rem;
+  }
+  .hero h1{
+    font-family:'Fraunces',verdana;
+    color:var(--Very-dark-blue);
+    margin-top:-6px;
+    margin-bottom:5px;
+  }
+  .hero p{
+    font-family:var(--montserrat);
+    font-weight:700;
+    color:var(--Dark-grayish-blue);
+    text-align: left;
+    width:16rem;
+    line-height:28px;
+  }
+  .ctn img{
+    content:url("image-product-desktop.jpg");
+    width:20rem;
+    height:auto;
+    border:none;
+    border-radius:15px 0px 0 15px;
+  }
+  .price{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:left;
+    align-items:center;
+    margin-top:2rem;
+  }
+  .price h1{
+    font-family:'Fraunces',verdana;
+    color:var(--Dark-cyan);
+    font-weight:700;
+    margin-right:10px
+  }
+  .price span{
+    font-family:var(--montserrat);
+    color:var(--Dark-grayish-blue);
+    text-decoration:line-through;
+    font-weight:500;
+  }
+  .hero button{
+    color:var(--White);
+    font:16px bold var(--montserrat);
+    font-weight:500;
+    background-color:var(--Dark-cyan);
+    width:18rem;
+    border:none;
+    border-radius:10px;
+    padding:1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-top:2rem;
+    margin-bottom:-1rem;
+  }
+  .hero button svg{
+    margin-right:10px;
+    text-align:center;
+  }
+  .hero button:hover {
+     background-color: var(--Very-dark-blue);
+   }
+}
